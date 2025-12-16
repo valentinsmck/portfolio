@@ -200,28 +200,28 @@ const Portfolio = () => {
         },
     ];
 
-    // Données de la veille (Mock)
+    // Données de la veille (Mise à jour pour IA générative)
     const veilleItems = [
         {
             id: 1,
-            title: "L'IA Générative dans le code",
-            date: "15 Déc 2024",
-            summary: "Analyse de l'impact de Copilot et ChatGPT sur la productivité des développeurs juniors.",
-            tags: ["Intelligence Artificielle", "Dev", "Futur"]
+            title: "Évolution des compétences : Du Codeur à l'Architecte",
+            date: "15 Jan 2025",
+            summary: "L'IA générative automatise l'écriture du code boilerplate. Le rôle du développeur évolue vers la supervision, l'architecture et la validation de la logique métier complexe.",
+            tags: ["IA", "Carrière", "Futur du Dev"]
         },
         {
             id: 2,
-            title: "Cybersécurité : Zero Trust",
-            date: "02 Nov 2024",
-            summary: "Pourquoi l'architecture Zero Trust devient la norme dans les entreprises modernes.",
-            tags: ["Sécurité", "Réseau", "Entreprise"]
+            title: "Productivité et Outils : Copilot, ChatGPT & Co.",
+            date: "02 Déc 2024",
+            summary: "Analyse de l'impact des assistants IA sur le cycle de développement : réduction du temps de débogage mais nécessité d'une vigilance accrue sur la qualité du code généré.",
+            tags: ["Productivité", "Outils", "Innovation"]
         },
         {
             id: 3,
-            title: "L'évolution de Java 21",
-            date: "10 Oct 2024",
-            summary: "Les nouveautés majeures : Virtual Threads et Pattern Matching.",
-            tags: ["Langage", "Java", "Backend"]
+            title: "Les risques : Hallucinations et Sécurité",
+            date: "10 Nov 2024",
+            summary: "Les défis posés par l'IA : injection de vulnérabilités, droits d'auteur et la dépendance technologique. Comment intégrer l'IA sans compromettre la sécurité des applications.",
+            tags: ["Sécurité", "Risques", "Ethique"]
         }
     ];
 
@@ -307,12 +307,20 @@ const Portfolio = () => {
             case 'veille':
                 return (
                     <div className="animate-fadeIn p-4 max-w-4xl mx-auto">
-                        <div className="flex justify-between items-end mb-8 border-b border-slate-700/50 pb-4 bg-slate-900/50 p-4 rounded-t-xl backdrop-blur-sm">
-                            <div>
+                        <div className="flex flex-col md:flex-row justify-between items-end mb-8 border-b border-slate-700/50 pb-4 bg-slate-900/50 p-4 rounded-t-xl backdrop-blur-sm">
+                            <div className="w-full">
                                 <h2 className="text-3xl font-bold text-white border-l-4 border-blue-500 pl-4">Veille Technologique</h2>
-                                <p className="text-slate-400 mt-2 pl-4">Sujet : <span className="text-blue-400 font-semibold">Intelligence Artificielle & Dev</span></p>
+                                <p className="text-slate-400 mt-2 pl-4">Sujet : <span className="text-blue-400 font-semibold">L'impact de l'IA générative sur le métier de développeur</span></p>
+
+                                {/* Mention Feedly */}
+                                <div className="flex items-center gap-2 mt-4 pl-4">
+                                    <span className="text-slate-500 text-sm">Outil principal :</span>
+                                    <div className="flex items-center gap-2 bg-slate-950/50 px-3 py-1.5 rounded-lg border border-slate-700/50 hover:border-green-500/50 transition-colors cursor-default">
+                                        <img src="https://cdn.simpleicons.org/feedly/2bb24c" alt="Feedly" className="w-5 h-5" />
+                                        <span className="text-slate-300 text-sm font-medium">Feedly</span>
+                                    </div>
+                                </div>
                             </div>
-                            <Search className="text-blue-500 mb-2 opacity-80" />
                         </div>
 
                         <div className="space-y-6">
@@ -460,7 +468,6 @@ const Portfolio = () => {
 
             {/* Footer */}
             <footer className="bg-slate-950/90 backdrop-blur-md border-t border-slate-800 py-8 mt-auto relative z-10">
-
             </footer>
         </div>
     );
