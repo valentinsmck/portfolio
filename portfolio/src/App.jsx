@@ -168,60 +168,42 @@ const Portfolio = () => {
         { name: 'VMware', logo: 'https://cdn.simpleicons.org/vmware/white' }, // Utilisation de SimpleIcons pour VMware
     ];
 
-    // Données des projets (Mock)
+    // Données des projets (Unique projet: Rapport de stage NS ART)
     const projects = [
         {
             id: 1,
-            title: 'Gestion de Parc',
-            desc: 'Application lourde en Java pour gérer un parc informatique.',
-            image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-            link: '/docs/projet-parc.pdf'
-        },
-        {
-            id: 2,
-            title: 'Site E-commerce',
-            desc: 'Site web dynamique PHP/MySQL avec panier et administration.',
-            image: 'https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-            link: '/docs/projet-ecommerce.pdf'
-        },
-        {
-            id: 3,
-            title: 'GLPI Deployment',
-            desc: 'Mise en place d\'un serveur GLPI sur une machine virtuelle Debian.',
-            image: 'https://images.unsplash.com/photo-1558494949-ef526b0042a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-            link: '/docs/documentation-glpi.pdf'
-        },
-        {
-            id: 4,
-            title: 'App Mobile Android',
-            desc: 'Application de suivi de tâches réalisée sous Android Studio.',
-            image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-            link: '/docs/app-mobile.pdf'
-        },
+            title: 'Rapport de stage : NS ART',
+            desc: "Réalisation d'un site vitrine pour une entreprise de BTP (NS ART). Conception graphique sur Figma, intégration HTML/CSS, création d'un thème WordPress personnalisé avec Advanced Custom Fields et mise en place de formulaires avec WPForms.",
+            image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+            link: './docs/NSART.pdf'
+        }
     ];
 
     // Données de la veille (Mise à jour pour IA générative)
     const veilleItems = [
         {
+            id: 0,
+            title: "Fail Critique : Google Antigravity efface un disque dur",
+            date: "12 Déc 2025",
+            summary: "Un incident majeur rapporté par Frandroid : l'agent IA de Google, en mode 'Turbo' autonome, a supprimé l'intégralité des données d'un utilisateur au lieu d'un simple dossier de cache. Cela met en lumière les risques concrets du 'Vibe Coding' et la nécessité absolue d'exécuter ces agents dans des environnements isolés (Sandbox) pour éviter des pertes irréversibles.",
+            tags: ["Sécurité", "Google", "Risques IA", "Vibe Coding"],
+            link: "https://www.frandroid.com/marques/google/2897191_une-defaillance-critique-google-antigravity-efface-entierement-le-disque-dur-dun-utilisateur"
+        },
+        {
             id: 1,
-            title: "Évolution des compétences : Du Codeur à l'Architecte",
-            date: "15 Jan 2025",
-            summary: "L'IA générative automatise l'écriture du code boilerplate. Le rôle du développeur évolue vers la supervision, l'architecture et la validation de la logique métier complexe.",
-            tags: ["IA", "Carrière", "Futur du Dev"]
+            title: "Gemini Code Assist : Mesurer son impact réel",
+            date: "10 Juil 2025",
+            summary: "Comment évaluer concrètement l'apport de Gemini Code Assist dans une équipe de dev ? Google propose un framework de mesure basé sur les métriques DORA (rapidité, fréquence de déploiement) pour dépasser le simple 'ressenti' et prouver le ROI de l'assistant IA.",
+            tags: ["Dev Tools", "Productivité", "DORA Metrics", "Gemini"],
+            link: "https://cloud.google.com/blog/fr/products/developpement-dapplications/un-framework-pour-exploiter-pleinement-gemini-code-assist-et-mesurer-son-impact"
         },
         {
             id: 2,
-            title: "Productivité et Outils : Copilot, ChatGPT & Co.",
-            date: "02 Déc 2024",
-            summary: "Analyse de l'impact des assistants IA sur le cycle de développement : réduction du temps de débogage mais nécessité d'une vigilance accrue sur la qualité du code généré.",
-            tags: ["Productivité", "Outils", "Innovation"]
-        },
-        {
-            id: 3,
-            title: "Les risques : Hallucinations et Sécurité",
-            date: "10 Nov 2024",
-            summary: "Les défis posés par l'IA : injection de vulnérabilités, droits d'auteur et la dépendance technologique. Comment intégrer l'IA sans compromettre la sécurité des applications.",
-            tags: ["Sécurité", "Risques", "Ethique"]
+            title: "Gemini 1.5 Pro : Capacités multimodales pour le code",
+            date: "14 Mai 2024",
+            summary: "Avec sa fenêtre contextuelle de 1 à 2 millions de tokens, Gemini 1.5 Pro change la donne pour l'analyse de code. Il ne s'agit plus juste de compléter une ligne, mais de comprendre une base de code entière, d'analyser des logs vidéo ou de générer des tests complexes à partir de spécifications visuelles.",
+            tags: ["Gemini 1.5 Pro", "Multimodal", "Analyse de Code"],
+            link: "https://blog.google/intl/fr-fr/nouvelles-de-lentreprise/gemini-update-mai-2024-fenetre/"
         }
     ];
 
@@ -249,7 +231,7 @@ const Portfolio = () => {
 
                         <div className="flex space-x-4 mt-8">
                             <a
-                                href="/docs/tableau-synthese.pdf"
+                                href="./docs/tsvs.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(37,99,235,0.5)] flex items-center border border-blue-400 cursor-pointer no-underline"
@@ -257,7 +239,7 @@ const Portfolio = () => {
                                 Tableau synthèse <FileText className="ml-2" size={20} />
                             </a>
                             <a
-                                href="/docs/mon-cv.pdf"
+                                href="./docs/mon-cv.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="px-8 py-3 bg-transparent hover:bg-slate-800/80 text-blue-400 border border-blue-500/50 rounded-lg font-medium transition-all backdrop-blur-md flex items-center justify-center gap-2 cursor-pointer no-underline"
@@ -272,7 +254,7 @@ const Portfolio = () => {
                 return (
                     <div className="animate-fadeIn p-4">
                         <h2 className="text-3xl font-bold text-white mb-8 border-l-4 border-blue-500 pl-4 bg-gradient-to-r from-slate-900/80 to-transparent py-2 backdrop-blur-sm">Mes Projets</h2>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {projects.map((project) => (
                                 <div key={project.id} className="group relative bg-slate-900/80 backdrop-blur-md rounded-2xl overflow-hidden hover:shadow-[0_0_30px_rgba(59,130,246,0.2)] transition-all duration-300 border border-slate-700/50 hover:border-blue-500/50 aspect-square flex flex-col">
                                     {/* Image Background with Overlay */}
@@ -293,9 +275,11 @@ const Portfolio = () => {
                                         </div>
                                         <a
                                             href={project.link}
-                                            className="mt-4 w-full py-2 bg-slate-800 hover:bg-blue-600 text-white text-center rounded-lg transition-all text-sm font-semibold flex items-center justify-center gap-2 border border-slate-700 hover:border-blue-500 shadow-lg"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="mt-4 w-full py-2 bg-slate-800 hover:bg-blue-600 text-white text-center rounded-lg transition-all text-sm font-semibold flex items-center justify-center gap-2 border border-slate-700 hover:border-blue-500 shadow-lg cursor-pointer no-underline"
                                         >
-                                            Accéder au dossier <ExternalLink size={14} />
+                                            Accéder au fichier <ExternalLink size={14} />
                                         </a>
                                     </div>
                                 </div>
@@ -312,12 +296,18 @@ const Portfolio = () => {
                                 <h2 className="text-3xl font-bold text-white border-l-4 border-blue-500 pl-4">Veille Technologique</h2>
                                 <p className="text-slate-400 mt-2 pl-4">Sujet : <span className="text-blue-400 font-semibold">L'impact de l'IA générative sur le métier de développeur</span></p>
 
-                                {/* Mention Feedly */}
-                                <div className="flex items-center gap-2 mt-4 pl-4">
-                                    <span className="text-slate-500 text-sm">Outil principal :</span>
-                                    <div className="flex items-center gap-2 bg-slate-950/50 px-3 py-1.5 rounded-lg border border-slate-700/50 hover:border-green-500/50 transition-colors cursor-default">
-                                        <img src="https://cdn.simpleicons.org/feedly/2bb24c" alt="Feedly" className="w-5 h-5" />
-                                        <span className="text-slate-300 text-sm font-medium">Feedly</span>
+                                {/* Mention Outils */}
+                                <div className="flex flex-col sm:flex-row sm:items-center gap-2 mt-4 pl-4">
+                                    <span className="text-slate-500 text-sm mb-2 sm:mb-0">Outils :</span>
+                                    <div className="flex flex-wrap gap-2">
+                                        <div className="flex items-center gap-2 bg-slate-950/50 px-3 py-1.5 rounded-lg border border-slate-700/50 hover:border-green-500/50 transition-colors cursor-default">
+                                            <img src="https://cdn.simpleicons.org/feedly/2bb24c" alt="Feedly" className="w-5 h-5" />
+                                            <span className="text-slate-300 text-sm font-medium">Feedly</span>
+                                        </div>
+                                        <div className="flex items-center gap-2 bg-slate-950/50 px-3 py-1.5 rounded-lg border border-slate-700/50 hover:border-blue-500/50 transition-colors cursor-default">
+                                            <img src="https://cdn.simpleicons.org/google/4285F4" alt="Google Alerts" className="w-5 h-5" />
+                                            <span className="text-slate-300 text-sm font-medium">Google Alerts</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -325,9 +315,18 @@ const Portfolio = () => {
 
                         <div className="space-y-6">
                             {veilleItems.map((item) => (
-                                <div key={item.id} className="bg-slate-900/60 backdrop-blur-md p-6 rounded-xl border border-slate-700/50 hover:border-blue-500/50 transition-all hover:bg-slate-800/80 group">
+                                <a
+                                    key={item.id}
+                                    href={item.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block bg-slate-900/60 backdrop-blur-md p-6 rounded-xl border border-slate-700/50 hover:border-blue-500/50 transition-all hover:bg-slate-800/80 group cursor-pointer"
+                                >
                                     <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                                        <h3 className="text-xl font-bold text-white group-hover:text-blue-300 transition-colors">{item.title}</h3>
+                                        <h3 className="text-xl font-bold text-white group-hover:text-blue-300 transition-colors flex items-center gap-2">
+                                            {item.title}
+                                            <ExternalLink size={16} className="opacity-0 group-hover:opacity-100 transition-opacity text-blue-400" />
+                                        </h3>
                                         <span className="text-sm text-blue-400 font-mono bg-blue-900/20 border border-blue-900/50 px-3 py-1 rounded mt-2 md:mt-0 w-fit">{item.date}</span>
                                     </div>
                                     <p className="text-slate-300 mb-4">{item.summary}</p>
@@ -338,7 +337,7 @@ const Portfolio = () => {
                       </span>
                                         ))}
                                     </div>
-                                </div>
+                                </a>
                             ))}
                         </div>
                     </div>
