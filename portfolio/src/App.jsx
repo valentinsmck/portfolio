@@ -245,9 +245,6 @@ const Portfolio = () => {
                             <p className="text-xl md:text-2xl text-slate-300 font-light tracking-wide">
                                 Option SLAM
                             </p>
-                            <p className="text-slate-400 leading-relaxed font-medium">
-                                Développement d'applications • Administration Système • Cybersécurité
-                            </p>
                         </div>
 
                         <div className="flex space-x-4 mt-8">
@@ -395,7 +392,7 @@ const Portfolio = () => {
                         <div className="flex items-center">
                             <div className="flex-shrink-0">
                 <span className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent hover:opacity-80 transition-opacity cursor-pointer">
-                  PORTFOLIO.
+                  VALENTIN SEMANCHUK
                 </span>
                             </div>
                         </div>
@@ -463,14 +460,7 @@ const Portfolio = () => {
 
             {/* Footer */}
             <footer className="bg-slate-950/90 backdrop-blur-md border-t border-slate-800 py-8 mt-auto relative z-10">
-                <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-slate-500 text-sm">© 2024 - Étudiant BTS SIO</p>
-                    <div className="flex space-x-6">
-                        <a href="#" className="text-slate-400 hover:text-blue-400 transition-colors"><Github size={20} /></a>
-                        <a href="#" className="text-slate-400 hover:text-blue-400 transition-colors"><Linkedin size={20} /></a>
-                        <a href="#" className="text-slate-400 hover:text-blue-400 transition-colors"><Mail size={20} /></a>
-                    </div>
-                </div>
+
             </footer>
         </div>
     );
