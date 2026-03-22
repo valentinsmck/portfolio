@@ -223,6 +223,31 @@
             </a>
           </div>
 
+          <!-- Projet: Parking Laravel -->
+          <div
+            class="project-card bg-white rounded-xl p-6 flex flex-col border border-outline-variant/10 shadow-sm hover:shadow-md transition-shadow"
+            data-name="Gestion de Parking - Laravel" data-tech="laravel php web application gestion parking github">
+            <div
+              class="aspect-square rounded-lg overflow-hidden mb-6 bg-surface-container flex items-center justify-center">
+              <span class="material-symbols-outlined text-6xl text-primary/40">directions_car</span>
+            </div>
+            <h3 class="text-lg font-bold text-primary mb-2">Gestion de Parking</h3>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span
+                class="bg-surface-variant/30 text-on-surface-variant text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full">Laravel</span>
+              <span
+                class="bg-surface-variant/30 text-on-surface-variant text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full">PHP</span>
+            </div>
+            <p class="text-on-surface-variant text-xs leading-relaxed mb-6">
+              Application web développée sous le framework Laravel destinée à la gestion des places de parking et des attributions.
+            </p>
+            <a class="mt-auto inline-flex items-center gap-2 text-primary font-bold text-xs border-b-2 border-secondary-container w-fit pb-1 hover:border-primary transition-all"
+              href="https://github.com/Rivalzina75/projet_parking" target="_blank">
+              Voir sur GitHub
+              <span class="material-symbols-outlined text-sm">open_in_new</span>
+            </a>
+          </div>
+
           <!-- Template de Projet Java (Base pour ajouter tes propres projets) -->
           <!-- Copie cette <div class="project-card"...> entière pour ajouter d'autres projets -->
           <div
@@ -378,27 +403,29 @@
       </div>
     </div>
   </main>
-  <!-- Bottom Mobile Nav -->
-  <nav
-    class="md:hidden fixed bottom-0 left-0 w-full bg-[#fafaf3] border-t border-outline-variant/10 shadow-[0_-10px_20px_rgba(0,0,0,0.02)] z-40 flex justify-around items-center px-4 py-3">
-    <a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#" style="">
-      <span class="material-symbols-outlined text-2xl" data-icon="home" style="">home</span>
-      <span class="text-[10px] font-bold uppercase" style="">Home</span>
-    </a>
-    <a class="flex flex-col items-center gap-1 text-primary" href="Projets.html" style="">
-      <span class="material-symbols-outlined text-2xl" data-icon="code"
-        style='font-variation-settings: "FILL" 1;'>code</span>
-      <span class="text-[10px] font-bold uppercase" style="">Projets</span>
-    </a>
-    <a class="flex flex-col items-center gap-1 text-on-surface-variant" href="Veille.html" style="">
-      <span class="material-symbols-outlined text-2xl" data-icon="visibility" style="">visibility</span>
-      <span class="text-[10px] font-bold uppercase" style="">Veille</span>
-    </a>
-    <a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#" style="">
-      <span class="material-symbols-outlined text-2xl" data-icon="psychology" style="">psychology</span>
-      <span class="text-[10px] font-bold uppercase" style="">Skills</span>
-    </a>
-  </nav>
+  <!-- Mobile Bottom Navigation -->
+<nav class="fixed bottom-0 w-full md:hidden bg-[#fafaf3] border-t border-outline-variant/10 flex justify-around items-center py-3 px-2 z-40 shadow-[0_-4px_20px_-5px_rgba(0,0,0,0.1)]">
+<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors" href="index.html">
+<span class="material-symbols-outlined text-2xl" data-icon="home">home</span>
+<span class="text-[10px] font-bold uppercase">Accueil</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors" href="Parcours.html">
+<span class="material-symbols-outlined text-2xl" data-icon="timeline">timeline</span>
+<span class="text-[10px] font-bold uppercase">Parcours</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="Projets.html">
+<span class="material-symbols-outlined text-2xl" data-icon="code" style="font-variation-settings: 'FILL' 1;">code</span>
+<span class="text-[10px] font-bold uppercase">Projets</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors" href="Veille.html">
+<span class="material-symbols-outlined text-2xl" data-icon="visibility">visibility</span>
+<span class="text-[10px] font-bold uppercase">Veille</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors" href="Competences.html">
+<span class="material-symbols-outlined text-2xl" data-icon="psychology">psychology</span>
+<span class="text-[10px] font-bold uppercase">Compétences</span>
+</a>
+</nav>
 
   <!-- JavaScript pour la gestion des onglets et la recherche -->
   <script>
