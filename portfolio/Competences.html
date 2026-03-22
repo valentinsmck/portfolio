@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Compétences | VALENTIN Tech Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#296957",
+              "secondary": "#745b00",
+              "surface-container-low": "#f4f4ed",
+              "secondary-fixed-dim": "#f1c100",
+              "inverse-on-surface": "#f1f1ea",
+              "on-tertiary-fixed": "#1a1c1c",
+              "on-secondary-fixed-variant": "#584400",
+              "tertiary-fixed": "#e2e2e2",
+              "on-error": "#ffffff",
+              "inverse-primary": "#93d3be",
+              "on-tertiary": "#ffffff",
+              "primary-fixed": "#aff0d9",
+              "surface-variant": "#e3e3dc",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#454747",
+              "surface-container-high": "#e8e9e2",
+              "on-error-container": "#93000a",
+              "on-surface-variant": "#404945",
+              "on-secondary-fixed": "#241a00",
+              "outline-variant": "#bfc9c3",
+              "on-secondary": "#ffffff",
+              "on-surface": "#1a1c18",
+              "tertiary-fixed-dim": "#c6c6c7",
+              "surface-container-highest": "#e3e3dc",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#ffe08b",
+              "background": "#fafaf3",
+              "on-primary-fixed": "#002018",
+              "secondary-container": "#fecb00",
+              "surface-dim": "#dadad4",
+              "on-background": "#1a1c18",
+              "on-primary-fixed-variant": "#065140",
+              "on-primary-container": "#7ebda8",
+              "on-primary": "#ffffff",
+              "primary": "#003429",
+              "tertiary-container": "#424444",
+              "outline": "#707975",
+              "surface-container": "#eeeee7",
+              "primary-fixed-dim": "#93d3be",
+              "on-secondary-container": "#6e5700",
+              "error": "#ba1a1a",
+              "primary-container": "#004d3d",
+              "inverse-surface": "#2f312d",
+              "surface-bright": "#fafaf3",
+              "tertiary": "#2c2e2e",
+              "on-tertiary-container": "#b0b1b1",
+              "surface": "#fafaf3"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .filled-icon {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- SideNavBar (Desktop) -->
+<aside class="hidden md:flex flex-col h-screen w-64 fixed left-0 top-0 border-r-0 shadow-none border-none py-12 px-6 justify-between z-50 bg-surface-container-low">
+<div class="space-y-12">
+<div class="flex flex-col gap-2">
+<span class="text-2xl font-black tracking-widest text-primary-container uppercase">VALENTIN</span>
+<p class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant/60">Étudiant en Informatique</p>
+</div>
+<nav class="space-y-2">
+<a class="flex items-center gap-3 text-[#404945] px-6 py-3 hover:text-[#004d3d] transition-colors font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-sm hover:bg-[#004d3d]/5 rounded-full" href="Index.html">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+                Accueil
+            </a>
+<a class="flex items-center gap-3 text-[#404945] px-6 py-3 hover:text-[#004d3d] transition-colors font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-sm hover:bg-[#004d3d]/5 rounded-full" href="Parcours.html">
+<span class="material-symbols-outlined" data-icon="timeline">timeline</span>
+                Parcours
+            </a>
+<a class="flex items-center gap-3 text-[#404945] px-6 py-3 hover:text-[#004d3d] transition-colors font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-sm hover:bg-[#004d3d]/5 rounded-full" href="Projets.html">
+<span class="material-symbols-outlined" data-icon="code">code</span>
+                Projets
+            </a>
+<a class="flex items-center gap-3 text-[#404945] px-6 py-3 hover:text-[#004d3d] transition-colors font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-sm hover:bg-[#004d3d]/5 rounded-full" href="Veille.html">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+                Veille
+            </a>
+<a class="flex items-center gap-3 bg-primary text-on-primary rounded-full px-6 py-3 transition-all duration-300 font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-sm shadow-lg shadow-primary/20" href="Competences.html">
+<span class="material-symbols-outlined filled-icon" data-icon="psychology">psychology</span>
+                Compétences
+            </a>
+</nav>
+</div>
+</aside>
+<!-- TopAppBar (Mobile) -->
+<header class="fixed top-0 w-full md:hidden z-40 backdrop-blur-xl bg-[#fafaf3]/80 flex justify-between items-center px-6 py-4">
+<span class="text-xl font-black tracking-widest text-[#004d3d]">VALENTIN</span>
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="account_circle">account_circle</span>
+</div>
+</header>
+<!-- Main Canvas -->
+<main class="md:ml-64 min-h-screen pt-24 pb-32 md:pt-16 md:pb-16 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Hero Header Section -->
+<header class="mb-12">
+<h2 class="text-5xl md:text-7xl font-extrabold text-primary tracking-tighter leading-none mb-8">
+            Stack <span class="relative">Technique<span class="absolute bottom-2 left-0 w-full h-3 bg-secondary-container/40 -z-10"></span></span>
+</h2>
+</header>
+<!-- Langages & Frameworks Section -->
+<section class="mb-16">
+<div class="flex items-center gap-3 border-l-4 border-primary pl-4 mb-8">
+<h3 class="text-2xl md:text-3xl font-extrabold text-primary">Langages &amp; Frameworks</h3>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+<!-- HTML -->
+<div class="bg-surface-container-low p-8 rounded-2xl flex flex-col items-center justify-center text-center group hover:bg-surface-container-high transition-colors border border-outline-variant/10">
+<div class="w-16 h-16 mb-4 flex items-center justify-center bg-white rounded-full shadow-sm">
+<img alt="HTML5" class="w-10 h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm0STvbSQ4a-LU31BrDctT44QKgJMMMJRiXhbna2OX7RQTosy8Sz2QPYUfNMQnuFn2RFD84omsJozS2qj_GwRuEktPybOt8PAzMpnF22df0wCMFt4M2_usT6HqvW1n-HIqh3SEn3RPspWSAq5KWjd4na5XpxbiYmiQqbpnfJJeyHZER1-oYLYDQfKaZPjP09APnYc5iayaThLwrIaOnx-8T63WmfzZC_8K_D748Sg_ZMwcKr2iP6JD_YFI-OFIAg_HhcFAPuO1OCo"/>
+</div>
+<span class="font-bold text-primary text-lg">HTML</span>
+</div>
+<!-- CSS -->
+<div class="bg-surface-container-low p-8 rounded-2xl flex flex-col items-center justify-center text-center group hover:bg-surface-container-high transition-colors border border-outline-variant/10">
+<div class="w-16 h-16 mb-4 flex items-center justify-center bg-white rounded-full shadow-sm">
+<img alt="CSS3" class="w-10 h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnyJvnHPji-JC33eVMyVp95EGF9nahadAZsFyU_1spEZUHgIYNS5pUsJXYSaa_EBuFPj4z_9PUKfndWY2neeQEYthol-26rBPAkYfMkgdw4sGblBEH226FljvSSs1vPXwQoNAtYGZn-UuxBXko9r1ZsCn0L7KzapwZiVa6if1yILyOtksVU3_M87qxLCDSwezjfXKmHLQV81wvjyJjwwnQ5P1lNDcQ0JE4NhbUZeW5JOBt-nNDjXrFwiaqXvRAXQRB8EZ5peRfVEU"/>
+</div>
+<span class="font-bold text-primary text-lg">CSS</span>
+</div>
+<!-- PHP -->
+<div class="bg-surface-container-low p-8 rounded-2xl flex flex-col items-center justify-center text-center group hover:bg-surface-container-high transition-colors border border-outline-variant/10">
+<div class="w-16 h-16 mb-4 flex items-center justify-center bg-white rounded-full shadow-sm">
+<img alt="PHP" class="w-10 h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw5GWB-INzxGKz9Y7nmbA1u5e_2Igme2OsuvH6clmxJvrTwmnMc96X4SrjaKhyS7SRMaJunGc1ONLcefyBelLoneAGzFN46gV5JjtaeIf-Uc-rD6p9cOPeSxcH1JvQfArArCVEvPpWYHlPqomui1funZpx5LyASSKTRafiB1hCCOUoanpEjV8nqN8CZOHRTHbTzUnm6rnWX3GCiIRKuuiQLvXKrq_05ueN2GCw0TItsRiuu5LGQ-E3ArhFwQluBNkhfu0SK_gw124"/>
+</div>
+<span class="font-bold text-primary text-lg">PHP</span>
+</div>
+<!-- Java -->
+<div class="bg-surface-container-low p-8 rounded-2xl flex flex-col items-center justify-center text-center group hover:bg-surface-container-high transition-colors border border-outline-variant/10">
+<div class="w-16 h-16 mb-4 flex items-center justify-center bg-white rounded-full shadow-sm">
+<img alt="Java" class="w-10 h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfPrJzZ0DH2GWrb3EXw_9zeVv5iyQToBF7-7dxdqLpuq5VSTWRUpqR36dfLFmhPpsRM1srOX3GSrJXyybBhQvGwXhagkVjzobAaaiY7KWwzPk78pnohiFoyil4kL1WQNp0r2LZ6t3y6R6OGbbmSl1-JLTj6wSog3LpGzs8OZTcVyZvVqjebj4xB1YbLe_-9rZ9QoNY5GbrcNZseyOyKyNnmLeANpcGAKMT59f-TTd6T5dCj8qhD9XNBGBSARMMkF6ONnBxh0QLv38"/>
+</div>
+<span class="font-bold text-primary text-lg">Java</span>
+</div>
+<!-- JavaScript -->
+<div class="bg-surface-container-low p-8 rounded-2xl flex flex-col items-center justify-center text-center group hover:bg-surface-container-high transition-colors border border-outline-variant/10">
+<div class="w-16 h-16 mb-4 flex items-center justify-center bg-white rounded-full shadow-sm">
+<img alt="JavaScript" class="w-10 h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNxmUd1E6mCAUMHUS60PuO98DzNr1YeNlvV5QKTOCUt9ZN9am0AciIxcQTOZeLtbW5hTO8K5nsnXqjfMnfNgELneQjZjTfVogrvS34RB5RdbsLUIvNvfwYFrcBkzt1zR1F-kipKsZcywVbgOBZGU-ItPYRMwqPDKWA85C5-gmb-q2udzCtCfx9ziQddbGcvz2ZrG7aEiYmPE5CSX5qZXsJeQ7l7DnSIUR8tUmPzWll4qO_EYW7qrRNegPontLRLBNxfmE-rbCXLPA"/>
+</div>
+<span class="font-bold text-primary text-lg">JavaScript</span>
+</div>
+<!-- SQL -->
+<div class="bg-surface-container-low p-8 rounded-2xl flex flex-col items-center justify-center text-center group hover:bg-surface-container-high transition-colors border border-outline-variant/10">
+<div class="w-16 h-16 mb-4 flex items-center justify-center bg-white rounded-full shadow-sm">
+<img alt="SQL" class="w-10 h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPIQf4BFSBmX49mpftB6R1Gl94q4nKusNt5-RxzoOdYCtQHO43HwMBAaWzOlWYS0QX163PRztigKjasFjK5Lrh-7BMrd-AE2gAX2QqXV-xE0pttbfZJ21RALjPYxjBMDX_Os2LIZyfIjZA86bk_6kRS_T2lWAibAkhuyJmrGOOdYKu2tyNIrCVW_l66KubS93bezPwj0F-9Np7Cl4AqYmxPOQ2xMe-uPEeSPCM9JBEAPJvukNmLZmGQOJLuf7n2IIZSN6CUm3Jc1w"/>
+</div>
+<span class="font-bold text-primary text-lg">SQL</span>
+</div>
+<!-- Laravel -->
+<div class="bg-surface-container-low p-8 rounded-2xl flex flex-col items-center justify-center text-center group hover:bg-surface-container-high transition-colors border border-outline-variant/10">
+<div class="w-16 h-16 mb-4 flex items-center justify-center bg-white rounded-full shadow-sm">
+<img alt="Laravel" class="w-10 h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpW9JkGU0zAlbz0ZCNkO-QhF5M4Ma6Qpeu0iVTdHxuqetGmBwJgGnx3iw_IeNWg1mqDw39FfrByp_vohSW2qaHD0W-fBj4GamB43w4Sp-kFXEqFOl162M1aLbOMiBtS7ifEdWxowoUHmAhCXCqCbmFwl8Ssi6ghdiCLlntcHNB2OkephksZhohjrXAd0CXxFuApEjR-ejnIDtHXTtF8Jp_cT0zJJIXgqzhXjOFvx2chnL8HkY8g6QCWaGKMN2eizX0NhQupL1W1pY"/>
+</div>
+<span class="font-bold text-primary text-lg">Laravel</span>
+</div>
+<!-- Python -->
+<div class="bg-surface-container-low p-8 rounded-2xl flex flex-col items-center justify-center text-center group hover:bg-surface-container-high transition-colors border border-outline-variant/10">
+<div class="w-16 h-16 mb-4 flex items-center justify-center bg-white rounded-full shadow-sm">
+<img alt="Python" class="w-10 h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8yFn2P6Mw8FP6bmw19G6RnEafiCn-gGeLjhlF-fXxsyf8nESpr1H3f3FVddGejsqeUgdMhc-5issFQo_A9fxUb8tLR--QeytiVirgtotQNaEAdqQ3KfTf40Yh5Wvvhh-9CgfsXPAGfGU-oQ_4_5gsijyv4sJJS3_25hunBvkfDxPs4DCrd8bsO5kfMpuh899TRBZ9YFPOPDhkm_sbq4NG0_JU402NnkdgAHh-d2ldVn3JRJMj1bEeXjDtGxXH5xTb2rLHqh1-i_o"/>
+</div>
+<span class="font-bold text-primary text-lg">Python</span>
+</div>
+</div>
+</section>
+<!-- Environnement de travail Section -->
+<section class="bg-primary/5 rounded-3xl p-8 md:p-12 border border-primary/10">
+<h4 class="text-center text-primary font-bold text-xl mb-10">Environnement de travail</h4>
+<div class="flex flex-wrap justify-center gap-3">
+<div class="flex items-center gap-2 bg-white border border-outline-variant/20 px-4 py-2 rounded-xl shadow-sm">
+<img alt="Windows" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5OEZQVGsSgcW2E8Mlpkc2HwtvwmK-BGUJz1qujyaa2OJO3ug3U90TPWekZPdbcRTA9Qgk_5QWxLZKtVgaNsdA82Nro-c7Ed_Wj0w3GDCDBgG_-bOBZ-9KVFFdaRyIUCE95Fe52rEhh6LddKhwTvauABw-oJ79eosmEc9pkkpWLlsA0iehPi-Kty51TRkr3xBPym9sVWXYEbuf_qEkVnvt5dknAbTvNCM2d5LTCXOTvpxpHurSpl1mlWjo0uyyXzVZMvz054R0Hqo"/>
+<span class="text-sm font-bold text-primary">Windows 10/11</span>
+</div>
+<div class="flex items-center gap-2 bg-white border border-outline-variant/20 px-4 py-2 rounded-xl shadow-sm">
+<img alt="Debian" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5L64-KORa6BxULufzy9QBC-Ud1lLuaC777SFNzsxNIBe_BbVArbEEfKPA9LUeojXCQbnuNWkG6qQ8iuUqUTSyBXQSnHphlrOShTuukquHUGYnZiWC3A8V77UKah4AjmKIa-YpVRIyLVGEAFf9Z9XL4O8XgFTZPkmHzaenyZOqTVQALGWTcht4J72MgofIbGyj7DWIHzrgifjVP1NPwmoSOxTLMj0Qx9zcXMJz-5-7uG9K9O6m1pjr-y7nYRPVsueDa2Aw2SFYGng"/>
+<span class="text-sm font-bold text-primary">Linux Debian</span>
+</div>
+<div class="flex items-center gap-2 bg-white border border-outline-variant/20 px-4 py-2 rounded-xl shadow-sm">
+<img alt="Ubuntu" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVluTyCGXrqR-5_dHg1P5js84ZcM6cyQbVz9ZrtaZmWTpZBhc36gfiYKPYsNIOJ4yvf_kSmSeCyV69k8IPFhoZA3_xwI0TXjMsiHo7zYn3KlaFxI2NFwz0J5XKPEZNUAAnPmShYneDxKD4UR3LJGYv5x2Hq9HZKeCC9KNSQ0yBOHBlZdDt9S-Kf4EUHGlhXJIn0Y7VpmPkW7UBQBkmiK5Gabmcq7bG3Fvi1c-bTKSXgyraWprWke203u4ShL6skb1FiWZCnb1hw7U"/>
+<span class="text-sm font-bold text-primary">Linux Ubuntu</span>
+</div>
+<div class="flex items-center gap-2 bg-white border border-outline-variant/20 px-4 py-2 rounded-xl shadow-sm">
+<img alt="IntelliJ" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASXbaEykyt4TfjZuDPNyhc3bh4vA9Mvgy5-qW7CQKv-p6M9RGPZVAwnTHfdSOEzU04WBBvbQbMP-XqoQzZQctsoHCTj8KuaMgT7podPOJwAArg9kM4oK5Rm2XYcpEvp5gBPZjRsrCj__HhznOUixv4od1QNJfIqY5XZH8-mPinx-Pii-vkWtyA9kvQGYOc13GYwog9Ap9D5vv79y_7NyHqA1uikvZtDxXY7QBnCsTN_iiyffVdiCZZ0BkcBsmW525AxFyuAv-PPj8"/>
+<span class="text-sm font-bold text-primary">IntelliJ IDEA</span>
+</div>
+<div class="flex items-center gap-2 bg-white border border-outline-variant/20 px-4 py-2 rounded-xl shadow-sm">
+<img alt="PHPStorm" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLd7GOB1Qtwvjiojxg7RZA0dzKDn96TD21Vdc3vH--qtym8yG0Uac_LdwoAI3vufr4cU3p2BW4bFXRHHG9LgAv82BxDcITjzZ_gc_Kss-WHHmu-5C4S_Tt32CBrHwQIMFDDn9Rg2TtY0AbsmGKFlKJfxEzPV8z4pI1XpN60Dysgyyo0iO9MwNjtwLJg5FHEbRfsUunXpBH1XEq9zdVdewDY5vKYWskea5rqgsBFPAV5iZ539aJYgaHFeTqE2w2OAs7-kH9GOKyCro"/>
+<span class="text-sm font-bold text-primary">PHPStorm</span>
+</div>
+<div class="flex items-center gap-2 bg-white border border-outline-variant/20 px-4 py-2 rounded-xl shadow-sm">
+<img alt="WebStorm" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFpdyR0P_v23n6sTa0-oBrUw24PfczKfLWk3MrUIzAfvTwNRtLPbeh549fa1Pl5g0L9XSPeYQXujvRNavg76i8frK6BeZMXxvSSj7jL2Gy4SCltb3x_UITlXGoZPITIk_MYPiQg_MQMcCApvXYWuSZBSd12iXMbiVrrF2FX78p3o08DqGb8SMcKOPn116U2lF_GX6rkoBCak9VA9XzwHrQa_-ZyszsVNV6VQhO4vQQUnx5V_y5zTsSEL-m9HX2YccFRiidabeIzD0"/>
+<span class="text-sm font-bold text-primary">WebStorm</span>
+</div>
+<div class="flex items-center gap-2 bg-white border border-outline-variant/20 px-4 py-2 rounded-xl shadow-sm">
+<img alt="Git" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHnMITjhEftXg9PYSGqlgF9QDuv4FV7us7VtIcSQHzYotd5WGlyi2xSKrvv4qruaNE1fm9JDvW8coqhGdq-i4LjUbgZvWBfS764-BUuwkS9OizqSdEliZyGnIGnVmBV7KQkL_UTCODz-JUJhe9Z2O_V3VkO2QiShoDosjV_b5_TR13KHWDMCTTBK5ky8F5N_8AI8af8JuGz6Pufw3oPft-wQ_InewRaAm3Nriw_gYhz9kaCSyQFAiq6QWQOXqDGXYPQbsJo9damT4"/>
+<span class="text-sm font-bold text-primary">Git</span>
+</div>
+<div class="flex items-center gap-2 bg-white border border-outline-variant/20 px-4 py-2 rounded-xl shadow-sm">
+<img alt="GitHub" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk7_QTbjwvrBWZqy-SJLreDwlWgt6nr4jBrPig9ngi0IkG8aOSFnoP-V7B57PfE_n9PXOI1K5vqbBDcrhPRM3oBeEdlH_ShSlbZkZrtX9mS2QQ7FtZW4E3oMedxJIdZzQd4nszbFxXOALfYhvli60D42lKZZRIxSQqPr5ojBX8vo6aNuLEgD3gJV8mnTw59KPTJRn5XhWkafS3fmP_Miyziie59XkX2DKliSGk_DdeZ9m_xxzu0gJPP_tA_vAsAoK-4FpbpzEx6Iw"/>
+<span class="text-sm font-bold text-primary">GitHub</span>
+</div>
+<div class="flex items-center gap-2 bg-white border border-outline-variant/20 px-4 py-2 rounded-xl shadow-sm">
+<img alt="VS Code" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWYCmoZpV6-vt1kmV68mmTMsiCr_Sj0l1eG928jZusl1_1pUDNFMJuW2sH5raIaNhAgu800kCUo63I1Bjd7V8DMwdbnOXzlew9bf1lnpIunYvn0uFhNgaVzCKgEdKcVtRLRHBIIm3zrqGzUdjZSBg84RX6ZI6FoGH0m1MZ-u2dvz0P8fqetPrru2IhQ7VGG9qG2nQR9KQ8KelAGRV36wcHx0Ug7FRiOwUk0BB54ExRy4Pg6OpDxdzf3OMx6Gge9P2UDKO3ORctxSg"/>
+<span class="text-sm font-bold text-primary">VS Code</span>
+</div>
+<div class="flex items-center gap-2 bg-white border border-outline-variant/20 px-4 py-2 rounded-xl shadow-sm">
+<img alt="Figma" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmKFE5fuvurpGishx4BykHQcPGdkGPItOkTxJjykgTs1NQLw4HjQb52H2eN1le69a2Sjstdc-w8ST0FRJXn6TcbNygWXhypBCnMlaC_TKXXsUV8CxPOBsRnkDLi-alHe-xfS-ycJSeL-tyG5hl9CYFpYUXTxbkH96BRhE5JcmsheOy1bfHmSY3ialwkG2DpPM2oWLL6pyuvDm_2UBxMIDGi8bLOmsr_YRX4SYRpxDo6j_UB76vz0AKIc6QORoIsn3DpaTezcxv6QQ"/>
+<span class="text-sm font-bold text-primary">Figma</span>
+</div>
+<div class="flex items-center gap-2 bg-white border border-outline-variant/20 px-4 py-2 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="settings_input_component">settings_input_component</span>
+<span class="text-sm font-bold text-primary">VMware</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Navigation (Mobile Bottom Bar) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 backdrop-blur-xl bg-[#fafaf3]/80 px-6 py-4 flex justify-between items-center shadow-[0_-4px_20px_rgba(0,0,0,0.05)] border-t border-outline-variant/10">
+<a class="text-[#404945] flex flex-col items-center gap-1" href="Index.html">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px] font-bold">Accueil</span>
+</a>
+<a class="text-[#404945] flex flex-col items-center gap-1" href="Projets.html">
+<span class="material-symbols-outlined" data-icon="architecture">architecture</span>
+<span class="text-[10px] font-bold">Projets</span>
+</a>
+<div class="bg-primary text-on-primary p-4 rounded-full -translate-y-8 shadow-xl shadow-primary/20">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</div>
+<a class="text-[#004d3d] flex flex-col items-center gap-1" href="Competences.html">
+<span class="material-symbols-outlined filled-icon" data-icon="psychology">psychology</span>
+<span class="text-[10px] font-bold">Skills</span>
+</a>
+<a class="text-[#404945] flex flex-col items-center gap-1" href="#">
+<span class="material-symbols-outlined" data-icon="info">info</span>
+<span class="text-[10px] font-bold">À propos</span>
+</a>
+</nav>
+</body></html>

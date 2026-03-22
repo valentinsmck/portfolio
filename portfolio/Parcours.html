@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#296957",
+              "secondary": "#745b00",
+              "surface-container-low": "#f4f4ed",
+              "secondary-fixed-dim": "#f1c100",
+              "inverse-on-surface": "#f1f1ea",
+              "on-tertiary-fixed": "#1a1c1c",
+              "on-secondary-fixed-variant": "#584400",
+              "tertiary-fixed": "#e2e2e2",
+              "on-error": "#ffffff",
+              "inverse-primary": "#93d3be",
+              "on-tertiary": "#ffffff",
+              "primary-fixed": "#aff0d9",
+              "surface-variant": "#e3e3dc",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#454747",
+              "surface-container-high": "#e8e9e2",
+              "on-error-container": "#93000a",
+              "on-surface-variant": "#404945",
+              "on-secondary-fixed": "#241a00",
+              "outline-variant": "#bfc9c3",
+              "on-secondary": "#ffffff",
+              "on-surface": "#1a1c18",
+              "tertiary-fixed-dim": "#c6c6c7",
+              "surface-container-highest": "#e3e3dc",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#ffe08b",
+              "background": "#fafaf3",
+              "on-primary-fixed": "#002018",
+              "secondary-container": "#fecb00",
+              "surface-dim": "#dadad4",
+              "on-background": "#1a1c18",
+              "on-primary-fixed-variant": "#065140",
+              "on-primary-container": "#7ebda8",
+              "on-primary": "#ffffff",
+              "primary": "#003429",
+              "tertiary-container": "#424444",
+              "outline": "#707975",
+              "surface-container": "#eeeee7",
+              "primary-fixed-dim": "#93d3be",
+              "on-secondary-container": "#6e5700",
+              "error": "#ba1a1a",
+              "primary-container": "#004d3d",
+              "inverse-surface": "#2f312d",
+              "surface-bright": "#fafaf3",
+              "tertiary": "#2c2e2e",
+              "on-tertiary-container": "#b0b1b1",
+              "surface": "#fafaf3"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #fafaf3;
+        }
+        h1, h2, h3, .brand-font {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopAppBar (Mobile Only) -->
+<header class="fixed top-0 w-full md:hidden z-40 backdrop-blur-xl bg-[#fafaf3]/80 flex justify-between items-center px-6 py-4">
+<span class="text-xl font-black tracking-widest text-primary-container uppercase">VALENTIN</span>
+<button class="bg-primary-container text-on-primary px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider">
+            Let's Connect
+        </button>
+</header>
+<!-- SideNavBar (Desktop Anchor) -->
+<nav class="h-screen w-64 fixed left-0 top-0 hidden md:flex flex-col py-12 px-6 justify-between bg-surface-container-low border-none">
+<div class="space-y-12">
+<div class="flex flex-col gap-2">
+<span class="text-2xl font-black tracking-widest text-primary-container uppercase">VALENTIN</span>
+<p class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant/60">Étudiant en Informatique</p>
+</div>
+<div class="flex flex-col gap-2">
+<a class="flex items-center gap-3 text-on-surface-variant px-6 py-3 hover:bg-primary-container/5 rounded-full transition-colors font-bold tracking-tight text-sm" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+                    Accueil
+                </a>
+<a class="flex items-center gap-3 bg-primary-container text-surface-container-lowest rounded-full px-6 py-3 transition-all duration-300 font-bold tracking-tight text-sm shadow-lg shadow-primary-container/20" href="#">
+<span class="material-symbols-outlined" data-icon="timeline">timeline</span>
+                    Parcours
+                </a>
+<a class="flex items-center gap-3 text-on-surface-variant px-6 py-3 hover:bg-primary-container/5 rounded-full transition-colors font-bold tracking-tight text-sm" href="#">
+<span class="material-symbols-outlined" data-icon="code">code</span>
+                    Projets
+                </a>
+<a class="flex items-center gap-3 text-on-surface-variant px-6 py-3 hover:bg-primary-container/5 rounded-full transition-colors font-bold tracking-tight text-sm" href="#">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+                    Veille
+                </a>
+<a class="flex items-center gap-3 text-on-surface-variant px-6 py-3 hover:bg-primary-container/5 rounded-full transition-colors font-bold tracking-tight text-sm" href="#">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+                    Compétences
+                </a>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="md:ml-64 min-h-screen p-8 md:p-20 pt-24 md:pt-20">
+<!-- Page Header -->
+<header class="max-w-4xl mb-24">
+<h1 class="text-5xl md:text-7xl font-extrabold text-primary tracking-tighter leading-none mb-6">
+                Mon <span class="relative inline-block">Parcours<span class="absolute bottom-2 left-0 w-full h-3 bg-secondary-container/40 -z-10"></span></span>
+</h1>
+</header>
+<!-- Timeline Section -->
+<section class="relative max-w-6xl mx-auto">
+<!-- The Vertical Line -->
+<div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-[2px] bg-primary/10 -translate-x-1/2"></div>
+<div class="space-y-16">
+<!-- Timeline Entry 1 (Left: Date, Right: Card) -->
+<div class="relative flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-0">
+<!-- Date (Left) -->
+<div class="md:w-1/2 md:pr-12 md:text-right order-1 md:order-1 pl-16 md:pl-0">
+<span class="text-sm font-black tracking-widest text-primary/40 uppercase">2024 - 2026</span>
+</div>
+<!-- Point -->
+<div class="absolute left-8 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary-container border-4 border-background ring-4 ring-primary/5 z-10 order-2"></div>
+<!-- Card (Right) -->
+<div class="md:w-1/2 md:pl-12 order-3 md:order-3 pl-16 md:pl-12">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_40px_60px_-15px_rgba(0,52,41,0.04)] border border-outline-variant/10 transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-2xl hover:bg-secondary-container/5 cursor-pointer">
+<h3 class="text-xl font-bold text-primary mb-3">BTS SIO OPTION SLAM</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm md:text-base">
+                                Formation centrée sur le développement d'applications et de solutions logicielles.
+                            </p>
+<div class="flex flex-wrap gap-2 mt-4"><span class="bg-surface-variant/30 text-on-surface-variant text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">Campus Charles de Foucault Paris 75018</span><span class="bg-surface-variant/30 text-on-surface-variant text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">EN COURS</span></div></div>
+</div>
+</div>
+<!-- Timeline Entry 2 (Card: Left, Date: Right) -->
+<div class="relative flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-0">
+<!-- Content Card (Left) -->
+<div class="md:w-1/2 md:pr-12 order-3 md:order-1 pl-16 md:pl-0">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_40px_60px_-15px_rgba(0,52,41,0.04)] border border-outline-variant/10 transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-2xl hover:bg-secondary-container/5 cursor-pointer">
+<h3 class="text-xl font-bold text-primary mb-3">STAGE DIOSE</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm md:text-base">
+                                Stage axé sur le travail collaboratif sur un dépôt GitHub en réalisant des issues dans le cadre du développement d’une solution d’automatisation sous Node.js, manipulation de fichiers de configuration JSON et la création de modèles MongoDB pour la persistance des données.
+                            </p>
+<div class="flex flex-wrap gap-2 mt-4"><span class="bg-surface-variant/30 text-on-surface-variant text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">5 semaines</span></div></div>
+</div>
+<!-- Point -->
+<div class="absolute left-8 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary-container/40 border-4 border-background z-10 order-2"></div>
+<!-- Date (Right) -->
+<div class="md:w-1/2 md:pl-12 order-1 md:order-3 pl-16 md:pl-12">
+<span class="text-sm font-black tracking-widest text-primary/40 uppercase">2026</span>
+</div>
+</div>
+<!-- Timeline Entry 3 (Left: Date, Right: Card) -->
+<div class="relative flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-0">
+<!-- Date (Left) -->
+<div class="md:w-1/2 md:pr-12 md:text-right order-1 md:order-1 pl-16 md:pl-0">
+<span class="text-sm font-black tracking-widest text-primary/40 uppercase">2025</span>
+</div>
+<!-- Point -->
+<div class="absolute left-8 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary-container/40 border-4 border-background z-10 order-2"></div>
+<!-- Content Card (Right) -->
+<div class="md:w-1/2 md:pl-12 order-3 md:order-3 pl-16 md:pl-12">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_40px_60px_-15px_rgba(0,52,41,0.04)] border border-outline-variant/10 transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-2xl hover:bg-secondary-container/5 cursor-pointer">
+<h3 class="text-xl font-bold text-primary mb-3">STAGE NS ART</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm md:text-base">
+                                Stage de 5 semaines portant sur la conception d'un site vitrine WordPress avec template graphique et création d'un formulaire de création de devis sous forme de plugin.
+                            </p>
+<div class="flex flex-wrap gap-2 mt-4"><span class="bg-surface-variant/30 text-on-surface-variant text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">5 semaines</span></div></div>
+</div>
+</div>
+<!-- Timeline Entry 4 (Left: Card, Right: Date) -->
+<div class="relative flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-0">
+<!-- Content Card (Left) -->
+<div class="md:w-1/2 md:pr-12 order-3 md:order-1 pl-16 md:pl-0">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_40px_60px_-15px_rgba(0,52,41,0.04)] border border-outline-variant/10 transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-2xl hover:bg-secondary-container/5 cursor-pointer">
+<h3 class="text-xl font-bold text-primary mb-3">BACCALAURÉAT TECHNOLOGIQUE OPTION SIG</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm md:text-base">
+                                Premier diplôme technologique avec une spécialisation en Systèmes d'Information et de Gestion.
+                            </p>
+<div class="flex flex-wrap gap-2 mt-4"><span class="bg-surface-variant/30 text-on-surface-variant text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">Lycée Charles de Foucault Paris 75018</span></div></div>
+</div>
+<!-- Point -->
+<div class="absolute left-8 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary-container/20 border-4 border-background z-10 order-2"></div>
+<!-- Date (Right) -->
+<div class="md:w-1/2 md:pl-12 order-1 md:order-3 pl-16 md:pl-12">
+<span class="text-sm font-black tracking-widest text-primary/40 uppercase">2024</span>
+</div>
+</div>
+</div>
+</section>
+<div class="mt-16 flex justify-center">
+<button class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-full font-bold text-sm uppercase tracking-widest hover:scale-105 transition-transform">
+                Télécharger mon CV (PDF)
+            </button>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full bg-[#fafaf3] md:hidden z-40 border-none flex justify-around items-center py-4 px-6 shadow-[0_-10px_40px_rgba(0,0,0,0.05)]">
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px] font-bold uppercase">Accueil</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary-container" href="#">
+<span class="material-symbols-outlined" data-icon="timeline" style="font-variation-settings: 'FILL' 1;">timeline</span>
+<span class="text-[10px] font-bold uppercase">Parcours</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined" data-icon="code">code</span>
+<span class="text-[10px] font-bold uppercase">Projets</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+<span class="text-[10px] font-bold uppercase">Veille</span>
+</a>
+</nav>
+</body></html>
