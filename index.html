@@ -1,210 +1,253 @@
 <!DOCTYPE html>
 
-<html class="light" lang="fr"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Manrope:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "surface-tint": "#296957",
-              "secondary": "#745b00",
-              "surface-container-low": "#f4f4ed",
-              "secondary-fixed-dim": "#f1c100",
-              "inverse-on-surface": "#f1f1ea",
-              "on-tertiary-fixed": "#1a1c1c",
-              "on-secondary-fixed-variant": "#584400",
-              "tertiary-fixed": "#e2e2e2",
-              "on-error": "#ffffff",
-              "inverse-primary": "#93d3be",
-              "on-tertiary": "#ffffff",
-              "primary-fixed": "#aff0d9",
-              "surface-variant": "#e3e3dc",
-              "error-container": "#ffdad6",
-              "on-tertiary-fixed-variant": "#454747",
-              "surface-container-high": "#e8e9e2",
-              "on-error-container": "#93000a",
-              "on-surface-variant": "#404945",
-              "on-secondary-fixed": "#241a00",
-              "outline-variant": "#bfc9c3",
-              "on-secondary": "#ffffff",
-              "on-surface": "#1a1c18",
-              "tertiary-fixed-dim": "#c6c6c7",
-              "surface-container-highest": "#e3e3dc",
-              "surface-container-lowest": "#ffffff",
-              "secondary-fixed": "#ffe08b",
-              "background": "#fafaf3",
-              "on-primary-fixed": "#002018",
-              "secondary-container": "#fecb00",
-              "surface-dim": "#dadad4",
-              "on-background": "#1a1c18",
-              "on-primary-fixed-variant": "#065140",
-              "on-primary-container": "#7ebda8",
-              "on-primary": "#ffffff",
-              "primary": "#003429",
-              "tertiary-container": "#424444",
-              "outline": "#707975",
-              "surface-container": "#eeeee7",
-              "primary-fixed-dim": "#93d3be",
-              "on-secondary-container": "#6e5700",
-              "error": "#ba1a1a",
-              "primary-container": "#004d3d",
-              "inverse-surface": "#2f312d",
-              "surface-bright": "#fafaf3",
-              "tertiary": "#2c2e2e",
-              "on-tertiary-container": "#b0b1b1",
-              "surface": "#fafaf3"
-            },
-            fontFamily: {
-              "headline": ["Plus Jakarta Sans"],
-              "body": ["Manrope"],
-              "label": ["Manrope"]
-            },
-            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+<html class="light" lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Manrope:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-tint": "#296957",
+            "secondary": "#745b00",
+            "surface-container-low": "#f4f4ed",
+            "secondary-fixed-dim": "#f1c100",
+            "inverse-on-surface": "#f1f1ea",
+            "on-tertiary-fixed": "#1a1c1c",
+            "on-secondary-fixed-variant": "#584400",
+            "tertiary-fixed": "#e2e2e2",
+            "on-error": "#ffffff",
+            "inverse-primary": "#93d3be",
+            "on-tertiary": "#ffffff",
+            "primary-fixed": "#aff0d9",
+            "surface-variant": "#e3e3dc",
+            "error-container": "#ffdad6",
+            "on-tertiary-fixed-variant": "#454747",
+            "surface-container-high": "#e8e9e2",
+            "on-error-container": "#93000a",
+            "on-surface-variant": "#404945",
+            "on-secondary-fixed": "#241a00",
+            "outline-variant": "#bfc9c3",
+            "on-secondary": "#ffffff",
+            "on-surface": "#1a1c18",
+            "tertiary-fixed-dim": "#c6c6c7",
+            "surface-container-highest": "#e3e3dc",
+            "surface-container-lowest": "#ffffff",
+            "secondary-fixed": "#ffe08b",
+            "background": "#fafaf3",
+            "on-primary-fixed": "#002018",
+            "secondary-container": "#fecb00",
+            "surface-dim": "#dadad4",
+            "on-background": "#1a1c18",
+            "on-primary-fixed-variant": "#065140",
+            "on-primary-container": "#7ebda8",
+            "on-primary": "#ffffff",
+            "primary": "#003429",
+            "tertiary-container": "#424444",
+            "outline": "#707975",
+            "surface-container": "#eeeee7",
+            "primary-fixed-dim": "#93d3be",
+            "on-secondary-container": "#6e5700",
+            "error": "#ba1a1a",
+            "primary-container": "#004d3d",
+            "inverse-surface": "#2f312d",
+            "surface-bright": "#fafaf3",
+            "tertiary": "#2c2e2e",
+            "on-tertiary-container": "#b0b1b1",
+            "surface": "#fafaf3"
           },
+          fontFamily: {
+            "headline": ["Plus Jakarta Sans"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          },
+          borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
         },
-      }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .blob-shape {
-            border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
-        }
-    </style>
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .blob-shape {
+      border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    }
+  </style>
 </head>
+
 <body class="bg-background font-body text-on-surface">
-<!-- Mobile TopAppBar -->
-<header class="fixed top-0 w-full md:hidden z-40 backdrop-blur-xl bg-[#fafaf3]/80 flex justify-between items-center px-6 py-4">
-<span class="text-xl font-black tracking-widest text-[#004d3d] md:hidden uppercase">VALENTIN</span>
-<div class="flex items-center gap-2 text-xs font-bold tracking-widest text-primary/60">
-<span class="material-symbols-outlined text-base">language</span>
-<div class="flex gap-1 uppercase">
-<a class="hover:text-primary transition-colors" href="#">EN</a>
-<span>|</span>
-<a class="text-primary font-black" href="#">FR</a>
-</div>
-</div>
-</header>
-<!-- Sidebar Navigation (Desktop) -->
-<aside class="h-screen w-64 fixed left-0 top-0 hidden md:flex flex-col py-12 px-6 justify-between bg-[#f4f4ed] shadow-none border-none">
-<div class="space-y-12">
-<div class="flex flex-col gap-1">
-<span class="text-2xl font-black tracking-widest text-[#004d3d] uppercase">VALENTIN</span>
-<span class="text-xs uppercase tracking-widest opacity-60 font-bold">Étudiant en Informatique</span>
-</div>
-<nav class="flex flex-col gap-2">
-<!-- Active Tab: Accueil -->
-<a class="flex items-center gap-3 bg-[#004d3d] text-[#fafaf3] rounded-full px-6 py-3 transition-all duration-300 scale-95 active:scale-90 bg-primary shadow-lg shadow-primary/20" href="index.html">
-<span class="material-symbols-outlined" data-icon="home">home</span>
-<span class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-sm">Accueil</span>
-</a>
-<a class="flex items-center gap-3 text-[#404945] px-6 py-3 hover:bg-[#004d3d]/5 rounded-full transition-colors" href="Parcours.html">
-<span class="material-symbols-outlined" data-icon="timeline">timeline</span>
-<span class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-sm">Parcours</span>
-</a>
-<a class="flex items-center gap-3 text-[#404945] px-6 py-3 hover:bg-[#004d3d]/5 rounded-full transition-colors" href="Projets.html">
-<span class="material-symbols-outlined" data-icon="code">code</span>
-<span class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-sm">Projets</span>
-</a>
-<a class="flex items-center gap-3 text-[#404945] px-6 py-3 hover:bg-[#004d3d]/5 rounded-full transition-colors" href="Veille.html">
-<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
-<span class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-sm">Veille</span>
-</a>
-<a class="flex items-center gap-3 text-[#404945] px-6 py-3 hover:bg-[#004d3d]/5 rounded-full transition-colors" href="Competences.html">
-<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
-<span class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-sm">Compétences</span>
-</a>
-</nav>
-</div>
-<div class="space-y-6">
-</div>
-</aside>
-<!-- Main Content Canvas -->
-<main class="md:ml-64 min-h-screen md:pt-0 pt-16">
-<div class="max-w-7xl mx-auto px-8 py-8 md:py-16"><div class="hidden md:flex justify-end items-center mb-8">
-<div class="flex items-center gap-2 text-sm font-bold tracking-widest text-primary/60">
-<span class="material-symbols-outlined text-lg">language</span>
-<div class="flex gap-1 uppercase">
-<a class="hover:text-primary transition-colors" href="#">EN</a>
-<span>|</span>
-<a class="text-primary font-black" href="#">FR</a>
-</div>
-</div>
-</div>
-<!-- Hero Section -->
-<section class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24 items-start">
-<div class="order-2 lg:order-1">
-<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-primary leading-tight mb-8">Moi c'est <span class="relative inline-block uppercase">VALENTIN<span class="absolute bottom-2 left-0 w-full h-4 bg-secondary-container -z-10 opacity-70"></span></span></h1>
-<p class="text-on-surface-variant text-xl md:text-2xl max-w-xl mb-12 leading-relaxed font-medium">
-                    Étudiant en Informatique passionné par le développement logiciel et l'intelligence artificielle. J'explore les nouvelles technologies pour construire le futur.
-                </p>
-<a href="Parcours.html" class="inline-block bg-primary text-on-primary px-10 py-5 rounded-xl font-headline font-bold text-sm tracking-widest hover:scale-[1.02] transition-transform shadow-xl shadow-primary/10">REGARDER MON PROFIL</a><div class="mt-12 p-8 md:p-10 bg-surface-container-low rounded-xl border border-outline-variant/30 max-w-2xl">
-<div class="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
-<div class="flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full shrink-0">
-<svg aria-hidden="true" class="w-10 h-10 text-primary" fill="currentColor" viewbox="0 0 24 24">
-<path clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" fill-rule="evenodd"></path>
-</svg>
-</div>
-<div class="flex flex-col gap-2">
-<h3 class="font-headline text-2xl font-extrabold text-primary uppercase">GITHUB</h3>
-<p class="text-on-surface-variant font-medium leading-relaxed mb-4">Découvrez mes contributions et projets sur GitHub.</p>
-<a class="group inline-flex items-center gap-2 text-primary font-headline font-bold text-sm tracking-widest hover:translate-x-1 transition-transform" href="https://github.com/valentinsmck" target="_blank">
-                VOIR MON PROFIL GITHUB
-                <span class="material-symbols-outlined text-base">arrow_forward</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class="order-1 lg:order-2 flex justify-center items-center relative lg:pt-8">
-<!-- Decorative Background Elements -->
-<div class="absolute inset-0 flex items-center justify-center -z-10">
-<div class="w-80 h-80 bg-surface-container-low rounded-full blur-3xl opacity-50"></div>
-</div>
-<!-- Portrait Container -->
-<div class="relative">
-<div class="w-64 h-64 md:w-96 md:h-96 blob-shape overflow-hidden bg-surface-container-high border-4 border-white shadow-2xl">
-<img alt="Valentin Portrait" class="w-full h-full object-cover" data-alt="Portrait de Valentin, étudiant en informatique" src="profile.jpg"/>
-</div>
-<!-- Floating Tech Icons -->
-<div class="absolute -top-4 -right-4 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg text-primary transition-all duration-300 hover:bg-primary hover:text-white cursor-pointer"><span class="material-symbols-outlined text-2xl" data-icon="timeline">timeline</span></div>
-<div class="absolute top-1/2 -left-8 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg text-primary transition-all duration-300 hover:bg-primary hover:text-white cursor-pointer"><span class="material-symbols-outlined text-2xl" data-icon="code">code</span></div>
-<div class="absolute bottom-4 -right-4 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg text-primary transition-all duration-300 hover:bg-primary hover:text-white cursor-pointer"><span class="material-symbols-outlined text-2xl" data-icon="visibility">visibility</span></div>
-<div class="absolute -bottom-6 left-1/4 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg text-primary transition-all duration-300 hover:bg-primary hover:text-white cursor-pointer"><span class="material-symbols-outlined text-2xl" data-icon="psychology">psychology</span></div>
-</div>
-</div>
-</section>
-<!-- Stats and Latest Section -->
-</div>
-</main>
-<!-- Mobile Bottom Navigation -->
-<nav class="fixed bottom-0 w-full md:hidden bg-[#fafaf3] border-t border-outline-variant/10 flex justify-around items-center py-3 px-2 z-40 shadow-[0_-4px_20px_-5px_rgba(0,0,0,0.1)]">
-<a class="flex flex-col items-center gap-1 text-primary" href="index.html">
-<span class="material-symbols-outlined text-2xl" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
-<span class="text-[10px] font-bold uppercase">Accueil</span>
-</a>
-<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors" href="Parcours.html">
-<span class="material-symbols-outlined text-2xl" data-icon="timeline">timeline</span>
-<span class="text-[10px] font-bold uppercase">Parcours</span>
-</a>
-<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors" href="Projets.html">
-<span class="material-symbols-outlined text-2xl" data-icon="code">code</span>
-<span class="text-[10px] font-bold uppercase">Projets</span>
-</a>
-<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors" href="Veille.html">
-<span class="material-symbols-outlined text-2xl" data-icon="visibility">visibility</span>
-<span class="text-[10px] font-bold uppercase">Veille</span>
-</a>
-<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors" href="Competences.html">
-<span class="material-symbols-outlined text-2xl" data-icon="psychology">psychology</span>
-<span class="text-[10px] font-bold uppercase">Compétences</span>
-</a>
-</nav>
-</body></html>
+  <!-- Mobile TopAppBar -->
+  <header
+    class="fixed top-0 w-full md:hidden z-40 backdrop-blur-xl bg-[#fafaf3]/80 flex justify-between items-center px-6 py-4">
+    <span class="text-xl font-black tracking-widest text-[#004d3d] md:hidden uppercase">VALENTIN</span>
+    <div class="flex items-center gap-2 text-xs font-bold tracking-widest text-primary/60">
+      <span class="material-symbols-outlined text-base">language</span>
+      <div class="flex gap-1 uppercase">
+        <a class="hover:text-primary transition-colors" href="#">EN</a>
+        <span>|</span>
+        <a class="text-primary font-black" href="#">FR</a>
+      </div>
+    </div>
+  </header>
+  <!-- Sidebar Navigation (Desktop) -->
+  <aside
+    class="h-screen w-64 fixed left-0 top-0 hidden md:flex flex-col py-12 px-6 justify-between bg-[#f4f4ed] shadow-none border-none">
+    <div class="space-y-12">
+      <div class="flex flex-col gap-1">
+        <span class="text-2xl font-black tracking-widest text-[#004d3d] uppercase">VALENTIN</span>
+        <span class="text-xs uppercase tracking-widest opacity-60 font-bold">Étudiant en Informatique</span>
+      </div>
+      <nav class="flex flex-col gap-2">
+        <!-- Active Tab: Accueil -->
+        <a class="flex items-center gap-3 bg-[#004d3d] text-[#fafaf3] rounded-full px-6 py-3 transition-all duration-300 scale-95 active:scale-90 bg-primary shadow-lg shadow-primary/20"
+          href="index.html">
+          <span class="material-symbols-outlined" data-icon="home">home</span>
+          <span class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-sm">Accueil</span>
+        </a>
+        <a class="flex items-center gap-3 text-[#404945] px-6 py-3 hover:bg-[#004d3d]/5 rounded-full transition-colors"
+          href="Parcours.html">
+          <span class="material-symbols-outlined" data-icon="timeline">timeline</span>
+          <span class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-sm">Parcours</span>
+        </a>
+        <a class="flex items-center gap-3 text-[#404945] px-6 py-3 hover:bg-[#004d3d]/5 rounded-full transition-colors"
+          href="Projets.html">
+          <span class="material-symbols-outlined" data-icon="code">code</span>
+          <span class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-sm">Projets</span>
+        </a>
+        <a class="flex items-center gap-3 text-[#404945] px-6 py-3 hover:bg-[#004d3d]/5 rounded-full transition-colors"
+          href="Veille.html">
+          <span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+          <span class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-sm">Veille</span>
+        </a>
+        <a class="flex items-center gap-3 text-[#404945] px-6 py-3 hover:bg-[#004d3d]/5 rounded-full transition-colors"
+          href="Competences.html">
+          <span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+          <span class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-sm">Compétences</span>
+        </a>
+      </nav>
+    </div>
+    <div class="space-y-6">
+    </div>
+  </aside>
+  <!-- Main Content Canvas -->
+  <main class="md:ml-64 min-h-screen md:pt-0 pt-16">
+    <div class="max-w-7xl mx-auto px-8 py-8 md:py-16">
+      <div class="hidden md:flex justify-end items-center mb-8">
+        <div class="flex items-center gap-2 text-sm font-bold tracking-widest text-primary/60">
+          <span class="material-symbols-outlined text-lg">language</span>
+          <div class="flex gap-1 uppercase">
+            <a class="hover:text-primary transition-colors" href="#">EN</a>
+            <span>|</span>
+            <a class="text-primary font-black" href="#">FR</a>
+          </div>
+        </div>
+      </div>
+      <!-- Hero Section -->
+      <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24 items-start">
+        <div class="order-2 lg:order-1">
+          <h1 class="font-headline text-5xl md:text-7xl font-extrabold text-primary leading-tight mb-8">Moi c'est <span
+              class="relative inline-block uppercase">VALENTIN<span
+                class="absolute bottom-2 left-0 w-full h-4 bg-secondary-container -z-10 opacity-70"></span></span></h1>
+          <p class="text-on-surface-variant text-xl md:text-2xl max-w-xl mb-12 leading-relaxed font-medium">
+            Étudiant en informatique, actuellement en BTS SIO option SLAM.
+          </p>
+          <a href="Parcours.html"
+            class="inline-block bg-primary text-on-primary px-10 py-5 rounded-xl font-headline font-bold text-sm tracking-widest hover:scale-[1.02] transition-transform shadow-xl shadow-primary/10">REGARDER
+            MON PROFIL</a>
+          <div class="mt-12 p-8 md:p-10 bg-surface-container-low rounded-xl border border-outline-variant/30 max-w-2xl">
+            <div class="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
+              <div class="flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full shrink-0">
+                <svg aria-hidden="true" class="w-10 h-10 text-primary" fill="currentColor" viewbox="0 0 24 24">
+                  <path clip-rule="evenodd"
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                    fill-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3 class="font-headline text-2xl font-extrabold text-primary uppercase">GITHUB</h3>
+                <p class="text-on-surface-variant font-medium leading-relaxed mb-4">Découvrez mes contributions et
+                  projets sur GitHub.</p>
+                <a class="group inline-flex items-center gap-2 text-primary font-headline font-bold text-sm tracking-widest hover:translate-x-1 transition-transform"
+                  href="https://github.com/valentinsmck" target="_blank">
+                  VOIR MON PROFIL GITHUB
+                  <span class="material-symbols-outlined text-base">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2 flex justify-center items-center relative lg:pt-8">
+          <!-- Decorative Background Elements -->
+          <div class="absolute inset-0 flex items-center justify-center -z-10">
+            <div class="w-80 h-80 bg-surface-container-low rounded-full blur-3xl opacity-50"></div>
+          </div>
+          <!-- Portrait Container -->
+          <div class="relative">
+            <div
+              class="w-64 h-64 md:w-96 md:h-96 blob-shape overflow-hidden bg-surface-container-high border-4 border-white shadow-2xl">
+              <img alt="Valentin Portrait" class="w-full h-full object-cover"
+                data-alt="Portrait de Valentin, étudiant en informatique" src="profile.jpg" />
+            </div>
+            <!-- Floating Tech Icons -->
+            <div
+              class="absolute -top-4 -right-4 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg text-primary transition-all duration-300 hover:bg-primary hover:text-white cursor-pointer">
+              <span class="material-symbols-outlined text-2xl" data-icon="timeline">timeline</span></div>
+            <div
+              class="absolute top-1/2 -left-8 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg text-primary transition-all duration-300 hover:bg-primary hover:text-white cursor-pointer">
+              <span class="material-symbols-outlined text-2xl" data-icon="code">code</span></div>
+            <div
+              class="absolute bottom-4 -right-4 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg text-primary transition-all duration-300 hover:bg-primary hover:text-white cursor-pointer">
+              <span class="material-symbols-outlined text-2xl" data-icon="visibility">visibility</span></div>
+            <div
+              class="absolute -bottom-6 left-1/4 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg text-primary transition-all duration-300 hover:bg-primary hover:text-white cursor-pointer">
+              <span class="material-symbols-outlined text-2xl" data-icon="psychology">psychology</span></div>
+          </div>
+        </div>
+      </section>
+      <!-- Stats and Latest Section -->
+    </div>
+  </main>
+  <!-- Mobile Bottom Navigation -->
+  <nav
+    class="fixed bottom-0 w-full md:hidden bg-[#fafaf3] border-t border-outline-variant/10 flex justify-around items-center py-3 px-2 z-40 shadow-[0_-4px_20px_-5px_rgba(0,0,0,0.1)]">
+    <a class="flex flex-col items-center gap-1 text-primary" href="index.html">
+      <span class="material-symbols-outlined text-2xl" data-icon="home"
+        style="font-variation-settings: 'FILL' 1;">home</span>
+      <span class="text-[10px] font-bold uppercase">Accueil</span>
+    </a>
+    <a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors"
+      href="Parcours.html">
+      <span class="material-symbols-outlined text-2xl" data-icon="timeline">timeline</span>
+      <span class="text-[10px] font-bold uppercase">Parcours</span>
+    </a>
+    <a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors"
+      href="Projets.html">
+      <span class="material-symbols-outlined text-2xl" data-icon="code">code</span>
+      <span class="text-[10px] font-bold uppercase">Projets</span>
+    </a>
+    <a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors"
+      href="Veille.html">
+      <span class="material-symbols-outlined text-2xl" data-icon="visibility">visibility</span>
+      <span class="text-[10px] font-bold uppercase">Veille</span>
+    </a>
+    <a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-colors"
+      href="Competences.html">
+      <span class="material-symbols-outlined text-2xl" data-icon="psychology">psychology</span>
+      <span class="text-[10px] font-bold uppercase">Compétences</span>
+    </a>
+  </nav>
+</body>
+
+</html>
